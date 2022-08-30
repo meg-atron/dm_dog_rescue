@@ -1,5 +1,194 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<h1>Home</h1>
+<!-- Dogs -->
+<section id="listings" class="py-5">
+  <div class="container">
+    <h3 class="text-center mb-3">Dogs of the Week</h3>
+    <div class="row">
+      <!-- Dog 1 -->
+      <div class="col-md-6 col-lg-4 mb-4">
+        <div class="card listing-preview">
+          <img class="card-img-top" src="assets/img/dogs/dog1.jpg" alt="">
+          <div class="card-body">
+            <div class="listing-heading text-center">
+              <h4 class="text-primary">Millie</h4>
+              <p> French Bulldog</p>
+            </div>
+            <hr>
+            <div class="row py-2 text-secondary">
+              <div class="col-6">
+                <i class="fas fa-th-large"></i> Gender: Female</div>
+              <div class="col-6">
+                <i class="fas fa-shield-dog"></i> French Bulldog</div>
+            </div>
+            <div class="row py-2 text-secondary">
+              <div class="col-6">
+                <i class="fas fa-bed"></i> Age: 2 years</div>
+              <div class="col-6">
+                <i class="fas fa-bath"></i> Size: 22 lbs</div>
+            </div>
+            <hr>
+            <div class="row py-2 text-secondary">
+              <div class="col-6">
+                <i class="fas fa-user"></i> Reese Swanson</div>
+            </div>
+            <div class="row text-secondary pb-2">
+              <div class="col-6">
+                <i class="fas fa-clock"></i> 5 days ago</div>
+            </div>
+            <hr>
+            <a href="dog_detail.html" class="btn btn-primary btn-block">More Info</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dog 2 -->
+      <div class="col-md-6 col-lg-4 mb-4">
+        <div class="card listing-preview">
+          <img class="card-img-top" src="assets/img/dogs/dog1.jpg" alt="">
+          <div class="card-body">
+            <div class="listing-heading text-center">
+              <h4 class="text-primary">Millie</h4>
+              <p> French Bulldog</p>
+            </div>
+            <hr>
+            <div class="row py-2 text-secondary">
+              <div class="col-6">
+                <i class="fas fa-th-large"></i> Gender: Female</div>
+              <div class="col-6">
+                <i class="fas fa-shield-dog"></i> French Bulldog</div>
+            </div>
+            <div class="row py-2 text-secondary">
+              <div class="col-6">
+                <i class="fas fa-bed"></i> Age: 2 years</div>
+              <div class="col-6">
+                <i class="fas fa-bath"></i> Size: 22 lbs</div>
+            </div>
+            <hr>
+            <div class="row py-2 text-secondary">
+              <div class="col-6">
+                <i class="fas fa-user"></i> Reese Swanson</div>
+            </div>
+            <div class="row text-secondary pb-2">
+              <div class="col-6">
+                <i class="fas fa-clock"></i> 5 days ago</div>
+            </div>
+            <hr>
+            <a href="dog_detail.html" class="btn btn-primary btn-block">More Info</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dog 3 -->
+      <div class="col-md-6 col-lg-4 mb-4">
+        <div class="card listing-preview">
+          <img class="card-img-top" src="assets/img/dogs/dog1.jpg" alt="">
+          <div class="card-body">
+            <div class="listing-heading text-center">
+              <h4 class="text-primary">Millie</h4>
+              <p> French Bulldog</p>
+            </div>
+            <hr>
+            <div class="row py-2 text-secondary">
+              <div class="col-6">
+                <i class="fas fa-th-large"></i> Gender: Female</div>
+              <div class="col-6">
+                <i class="fas fa-shield-dog"></i> French Bulldog</div>
+            </div>
+            <div class="row py-2 text-secondary">
+              <div class="col-6">
+                <i class="fas fa-bed"></i> Age: 2 years</div>
+              <div class="col-6">
+                <i class="fas fa-bath"></i> Size: 22 lbs</div>
+            </div>
+            <hr>
+            <div class="row py-2 text-secondary">
+              <div class="col-6">
+                <i class="fas fa-user"></i> Reese Swanson</div>
+            </div>
+            <div class="row text-secondary pb-2">
+              <div class="col-6">
+                <i class="fas fa-clock"></i> 5 days ago</div>
+            </div>
+            <hr>
+            <a href="dog_detail.html" class="btn btn-primary btn-block">More Info</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <!-- Search Showcase -->
+  <section id="showcase">
+    <div class="container text-center">
+      <div class="home-search p-5">
+        <div class="overlay p-5">
+          <h1 class="display-4 mb-4">
+            Find Your Best Friend
+          </h1>
+          <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae quas, asperiores eveniet vel nostrum magnam
+            voluptatum tempore! Consectetur, id commodi!</p>
+          <div class="search">
+            <form action="search.html">
+              <!-- Form Row 1 -->
+              <div class="form-row">
+                <div class="col-md-4 mb-3">
+                  <label class="sr-only">Keywords</label>
+                  <input type="text" name="keywords" class="form-control" placeholder="Keyword: (calm, energetic, etc.)">
+                </div>
+
+                <div class="col-md-4 mb-3">
+                  <label class="sr-only">Breed</label>
+                  <input type="text" name="breed" class="form-control" placeholder="Breed">
+                </div>
+
+                <div class="col-md-4 mb-3">
+                  <label class="sr-only">Age</label>
+                  <select name="age" class="form-control">
+                    <option selected="true" disabled="disabled">Age</option>
+                    <option value="less than 1 year">less than 1 year</option>
+                    <option value="1-2 years">1-2 years</option>
+                    <option value="3-4 years">3-4 years</option>
+                    <option value="5-7 years">5-7 years</option>
+                    <option value="8-10 years">8-10 years</option>
+                    <option value="over 10 years">over 10 years</option>
+                  </select>
+                </div>
+              </div>
+              <!-- Form Row 2 -->
+              <div class="form-row">
+                <div class="col-md-6 mb-3">
+                  <label class="sr-only">Size</label>
+                  <select name="size" class="form-control">
+                    <option selected="true" disabled="disabled">Size</option>
+                    <option value="1">less than 10 lbs</option>
+                    <option value="2">10-20 lbs</option>
+                    <option value="3">20-30 lbs</option>
+                    <option value="4">40-50 lbs</option>
+                    <option value="5">50-60 lbs</option>
+                    <option value="6">60-70 lbs</option>
+                    <option value="7">70-80 lbs</option>
+                    <option value="8">more than 80 lbs</option>
+                  </select>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <select name="price" class="form-control" id="type">
+                    <option selected="true" disabled="disabled">Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+
+                  </select>
+                </div>
+              </div>
+              <button class="btn btn-secondary btn-block mt-4" type="submit">Submit form</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
 {% endblock %}
