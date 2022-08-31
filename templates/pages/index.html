@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-
+{% load static %}
 {% block content %}
 <!-- Dogs -->
 <section id="listings" class="py-5">
@@ -9,7 +9,7 @@
       <!-- Dog 1 -->
       <div class="col-md-6 col-lg-4 mb-4">
         <div class="card listing-preview">
-          <img class="card-img-top" src="assets/img/dogs/dog1.jpg" alt="">
+          <img class="card-img-top" src="{% static 'img/dog1.jpg' %}" alt="">
           <div class="card-body">
             <div class="listing-heading text-center">
               <h4 class="text-primary">Millie</h4>
@@ -46,7 +46,7 @@
       <!-- Dog 2 -->
       <div class="col-md-6 col-lg-4 mb-4">
         <div class="card listing-preview">
-          <img class="card-img-top" src="assets/img/dogs/dog1.jpg" alt="">
+          <img class="card-img-top" src="{% static 'img/dog1.jpg' %}" alt="">
           <div class="card-body">
             <div class="listing-heading text-center">
               <h4 class="text-primary">Millie</h4>
@@ -83,7 +83,7 @@
       <!-- Dog 3 -->
       <div class="col-md-6 col-lg-4 mb-4">
         <div class="card listing-preview">
-          <img class="card-img-top" src="assets/img/dogs/dog1.jpg" alt="">
+          <img class="card-img-top" src="{% static 'img/dog1.jpg' %}" alt="">
           <div class="card-body">
             <div class="listing-heading text-center">
               <h4 class="text-primary">Millie</h4>
