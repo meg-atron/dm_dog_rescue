@@ -30,6 +30,8 @@ INSTALLED_APPS = [
 
     #apps
     'pages.apps.PagesConfig',
+    'dogs.apps.DogsConfig',
+    'staff.apps.StaffConfig',
 ]
 
 MIDDLEWARE = [
